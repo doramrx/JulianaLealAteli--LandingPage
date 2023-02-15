@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  border:0;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/*  HEADER  */
+
+header{
+  background-image: url('assets/header-capa.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 0%;
+  height: 150px;
+  position: relative;
+}
+
+header h1{
+  padding: 50px;
+  font-family: 'Cinzel', serif;
+  font-size: 40px;
+  text-align: center;
+  color: #BA4B2F;
+}
+
+/*  NAV  */
+
+nav{
+  background-color: #BA4B2F;
+  position: sticky; /* navbar fica fixa no topo da pagina*/
+  overflow: hidden;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+nav div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav div a{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 13px 60px;
+  text-decoration: none;
+}
+
+nav div a:hover{
+  background-color: #92361e;
+}
+
+/*  CONTENT  */
+
+/*    HOME   */
+
+section#home div.wrapper{
+  display: flex;
+  height: 500px;
+}
+
+section#home div.wrapper div.col-a{
+  background-color: #FCF5EB;
+  color:#BA4B2F;
+  width: 50%;
+}
+
+section#home div.wrapper div.col-a div{
+  margin-top: 80px;
+  margin-left: 180px;
+  margin-right: 180px;
+}
+
+section#home div.wrapper div.col-a h1{
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+section#home div.wrapper div.col-a p{
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+}
+
+a.button{
+
+  border: 2px solid #BA4B2F;
+  border-radius: 2px;
+
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: fit-content;
+
+  color:#BA4B2F;
+  font-weight: 400;
+  font-size: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+
+  text-decoration: none;
+
+  transition: background 0.2s;
+}
+
+a.button:hover{
+  cursor: pointer;
+  background-color: #BA4B2F;
+  color: #FCF5EB;
+  font-weight: 600;
+}
+
+section#home div.wrapper div.col-b{
+  background-color: #EFA593;
+  width: 50%;
+}
+
+section#home div.wrapper div.col-b img{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 48.8px;
+}
+
+/*  SOBRE MIM  */
+
+section#sobre div.wrapper{
+  display: flex;
+  height: 500px;
+  background-color: #BA4B2F;
+}
+
+section#sobre div.wrapper div.col-a img{
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 41px;
+}
+
+section#sobre div.wrapper div.col-b div{
+  margin-top: 80px;
+  margin-left: 100px;
+  margin-right: 180px;
+}
+
+section#sobre div.wrapper div.col-b{
+  color: #FCF5EB;
+  text-align: left;
+  font-size: 18px;
+}
+
+section#sobre div.wrapper div.col-b h1{
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/*  SERVIÇOS  */
+
+section#servicos div.wrapper{
+  display: flex;
+  height: 500px;
+  background-color: #FCF5EB;
+}
+
+section#servicos div.wrapper h1{
+  color: #BA4B2F;
+  font-size: 35px;
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+section#servicos div.wrapper div.cards{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 180px;
+}
+
+/*
+Tentei criar os cards utilizando html e css, mas tive muita
+dificuldade em centralizar da maneira que planejava
+*/
+
+section#servicos div.wrapper div.cards div.card div.circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  
+  background-color: #BA4B2F;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+
+  margin-top: 40%;
+}
+
+section#servicos div.wrapper div.cards div.card div.circle p{
+  text-align: center;
+  font-size: 22px;
+  color: #FCF5EB;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+section#servicos div.wrapper div.cards div.card p{
+  color: #BA4B2F;
+  font-size: 20px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* FOOTER */
+
+footer{
+  display: flex;
+  height: 500px;
+  background-color: #BA4B2F;
+}
+
+footer div{
+  color: #FCF5EB;
+  text-align: center;
+  margin: auto;
+  margin-top: 80px;
+}
+
+
+footer div h1{
+  font-size: 35px;
+  font-weight: 600;
+}
+
+footer div p{
+  font-size: 18px;
+  padding: 10px;
+}
+
+footer a.button{
+  border: 2px solid #FCF5EB;
+  color: #FCF5EB;
+}
+
+footer a.button:hover{
+  cursor: pointer;
+  background-color: #FCF5EB;
+  color: #BA4B2F;
+}
+
+
+
+
+
+
+
