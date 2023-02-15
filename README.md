@@ -1,2 +1,2 @@
-# JulianaLealAteli--LandingPage
+# JulianaLealAtelie-LandingPage
 JulianaLealAteliê-LandingPage
